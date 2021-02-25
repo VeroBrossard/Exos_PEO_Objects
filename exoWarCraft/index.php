@@ -2,7 +2,7 @@
 require_once("Model/Character.php");
 $perso1 = new Character( 'Char1',500, 1000);
 require_once("Model/Hero.php");
-$Hero1= new Character('Char2',400, 2000);
+$Hero1= new Hero('BERSERK sword',5000,'Bouclier de Stormwinf',1000);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -45,6 +45,12 @@ voir : https://www.alsacreations.com/article/lire/1621-responsive-images-srcset.
       <BR>
     </div>
 
+    Votre personnage <b><?= $Hero1->get_name(); ?></b> présente une  health de  <?= $Hero1->get_health(); ?> <br>
+      et une rage de <?= $Hero1->get_rage(); ?> <br>
+      Son arme est un(e) <?= $Hero1->get_weapon(); ?> qui assène <?= $Hero1->get_weaponDamages(); ?> points de dégâts par coup.<br>
+       Sa protection est assurée par un(e) <?= $Hero1->get_shield(); ?> qui peut le préserver de  <?= $Hero1->get_ShieldValue(); ?> points de dégâts à chaque assaut.
+ <br>
+      <BR>
     <div>
      
     </div>

@@ -7,7 +7,7 @@ class Hero extends Character
 {
 
     /** @var string */
-    private  $_weapon;
+    public  $_weapon;
 
     /** @var int */
     public  $_weaponDamages;
@@ -21,9 +21,18 @@ class Hero extends Character
     /**
      * Default constructor
      */
-    public function __construct()
-    {
-        // ...
+    public function __construct($new_weapon, $new_weaponDamages, $new_shield , $new_ShieldValue)
+    {   
+       parent :: __construct('Char2',400, 2000);
+        $this ->set_name($new_weapon);
+        $this -> get_name();
+        $this ->set_name($new_weaponDamages);
+        $this -> get_name();
+        $this ->set_name($new_shield);
+        $this -> get_name();
+        $this ->set_name($new_ShieldValue);
+        $this -> get_name();
+        echo "new hero :" . parent:: get_health() . "<br>";
     }
 
     /**
@@ -34,12 +43,12 @@ class Hero extends Character
             $this->_weapon = $new_weapon;
         }
     }
-    public function set_name($new_weaponDamages)
+    public function set_weaponDamages($new_weaponDamages)
     { {
             $this->_weaponDamages = $new_weaponDamages;
         }
     }
-    public function set_health($new_shield)
+    public function set_shield($new_shield)
     { {
             $this->_shield = $new_shield;
         }
@@ -53,9 +62,22 @@ class Hero extends Character
     /**
      * 
      */
-    public function  get_attribute()
+    public function get_weapon()
     {
-        // TODO implement here
+        return $this->_weapon;
+    }
+    public function get_weaponDamages()
+    { {
+        return $this->_weaponDamages ;
+        }
+    }
+    public function get_shield()
+    {
+        return $this->_shield;
+    }
+    public function get_ShieldValue()
+    {
+        return $this->_ShieldValue;
     }
 
 

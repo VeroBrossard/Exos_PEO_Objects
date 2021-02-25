@@ -12,7 +12,7 @@ class Bank_Account
     private  $_balance;
 
     /** @var int */
-    private  $_interest_rate;
+    private  $_interest_rate ;
 
     /** @var string */
     private  $_currency;
@@ -99,7 +99,7 @@ class Bank_Account
 }
 
 //  //******  création new compte pour test    */
-// $my_Cpte = new Bank_Account('Chère petite Madame', 100000, 6.7, '€');
+ $my_Cpte = new Bank_Account('Chère  Madame', 1000, 6.7, '€');
 
 
 // **** OK1 affichage des attributs par vardump avec leurs valeurs
@@ -114,13 +114,13 @@ class Bank_Account
 // $class_attributes = get_object_vars($my_Cpte);
 // var_dump($class_attributes);
 
-/*   *** PAS OK  renvoie vide !!  */
-// $class_vars = get_class_vars(get_class($my_Cpte));
-// echo "essai get_class_vars(get_class())" . "<br>";
-// foreach ($class_vars as $name => $value) {
-//     echo "essai " . $name . ": " . $value . "\n";
-// }
-// echo "sortie get_class_vars(get_class())" . "<br>";
+/*   *** PAS OK  renvoie vide ok si var "public"  !!  */
+$class_vars = get_class_vars('Bank_Account');
+echo "essai get_object_vars())" . "<br>";
+foreach ($class_vars as $name => $value) {
+    echo "essai " . $name . ": " . $value . "\n";
+}
+echo "<br>sortie get_class_vars(get_class())" . "<br>";
 
 
 //  **** OK3 ** ceci affiche la liste des méthodes de la classe Bank_Account
