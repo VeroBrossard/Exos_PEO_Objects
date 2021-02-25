@@ -19,6 +19,12 @@ $Compte1 = new Bank_Account('Chère petite Madame', 100000, 6.7, '€');
   </div>
 
   <section>
+  <?php
+
+
+  // affichage des attributs de $compte1 avec leurs valeurs
+  //$Compte1->test();
+  ?>
     <h1>Votre Compte</h1>
     <div>
 
