@@ -3,11 +3,17 @@
 declare(strict_types=1);
 
 
-class Cadre extends Employee
+class Employee
 {
 
+    /** @var string */
+    private string $_Lastname;
+
+    /** @var string */
+    private string $_Firstname;
+
     /** @var integer */
-    private integer $bonus;
+    private int $_salary;
 
     /**
      * Default constructor
@@ -20,7 +26,7 @@ class Cadre extends Employee
     /**
      * 
      */
-    public function have_resp()
+    public function work()
     {
         // TODO implement here
     }

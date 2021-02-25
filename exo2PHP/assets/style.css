@@ -1,3 +1,9 @@
+/*structure responsive en 
+<header></header>
+<section > 
+<div>.autant que necessaire ...</div>
+</section>*/
+
 /* ***** adaptabilité du texte au viewport */
 html {
   font-size: 100%;
@@ -28,6 +34,10 @@ body {
   background-image: url('../assets/img/bankFacade2.jpg');
   background-size: cover;
   opacity: 0.7;
+}
+#title1{
+  /* color: red; */
+  opacity: 1;
 }
 section {
   width: 70%;

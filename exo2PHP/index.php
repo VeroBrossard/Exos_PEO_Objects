@@ -1,6 +1,6 @@
 <?php
 require_once("bank_Account.php");
-$Compte1 = new Bank_Account('Chère petite Madame ', 100000, 6.7, '&nbsp;€');
+$Compte1 = new Bank_Account('Chère petite Madame', 100000, 6.7, '€');
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $Compte1 = new Bank_Account('Chère petite Madame ', 100000, 6.7, '&nbsp;€');
 </head>
 
 <body>
-  <div id="header"> Bank Account
+  <div id="header"><span id="title1"> Bank Account</span>
   </div>
 
   <section>
